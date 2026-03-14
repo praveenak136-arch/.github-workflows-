@@ -1,0 +1,8 @@
+name: Praveena
+on: push
+jobs:
+my_jobs:
+runs_on: ubuntu-latest
+steps:
+name: message
+run: echo"CI Pipeline Running"
