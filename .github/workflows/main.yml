@@ -1,4 +1,4 @@
-name: Praveena
+name: DevOps Workflow
 
 on: push
 
@@ -15,3 +15,11 @@ jobs:
 
       - name: List files
         run: ls
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Check Python version
+        run: python --version
